@@ -23,23 +23,27 @@ public class Hamburger {
 		this.additions = new ArrayList<>();
 	}
 
-	public BurgerName getName() {
-		return name;
+	public void addAddition(Addition addition) {
+		if (addition != null) {
+			additions.add(addition);
+		}
 	}
 
-	public Meat getMeat() {
-		return meat;
+	public void addAllAdditions(List<Addition> additions) {
+		if (additions != null && !additions.isEmpty()) {
+			this.additions.addAll(additions);
+		}
 	}
 
-	public double getPrice() {
-		return price;
-	}
+	public double itemizeHamburger() {
+		double hamburgerPrice = this.price;
+		System.out.println(this.name + " hamburger on a " + this.breadRollType + " roll, with " + this.meat + " meat, price is " + this.price);
+		for (Addition addition : this.additions) {
+			double price = addition.getPrice();
+			hamburgerPrice += price;
+			System.out.println("Added " + addition.getName() + " for an extra " + price);
+		}
 
-	public BreadRollType getBreadRollType() {
-		return breadRollType;
-	}
-
-	public List<Addition> getAdditions() {
-		return additions;
+		return hamburgerPrice;
 	}
 }

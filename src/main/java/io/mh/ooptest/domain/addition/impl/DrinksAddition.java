@@ -6,6 +6,6 @@ import io.mh.ooptest.domain.addition.BaseAddition;
 public class DrinksAddition extends BaseAddition {
 
 	public DrinksAddition() {
-		super(Constants.DRINKS, Constants.ZERO_PRICE);
+		super(Constants.DRINKS, Constants.DRINKS_PRICE);
 	}
 }

@@ -6,6 +6,6 @@ import io.mh.ooptest.domain.addition.BaseAddition;
 public class ChipsAddition extends BaseAddition {
 
 	public ChipsAddition() {
-		super(Constants.CHIPS, Constants.ZERO_PRICE);
+		super(Constants.CHIPS, Constants.CHIPS_PRICE);
 	}
 }

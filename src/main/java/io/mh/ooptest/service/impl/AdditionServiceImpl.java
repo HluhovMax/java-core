@@ -27,9 +27,9 @@ public class AdditionServiceImpl implements AdditionService {
 		additionForHamburgerCache.put(Constants.TOMATO, new TomatoAddition());
 		additionForHamburgerCache.put(Constants.LETTUCE, new LettuceAddition());
 		// FOR HEALTHY
-		Map<String, Addition> additionForHealthyHamburgerCache = new HashMap<>(additionForHamburgerCache);
+		Map<String, Addition> additionForHealthyHamburgerCache = new HashMap<>();
 		// FOR DELUXE
-		Map<String, Addition> additionForDeluxeHamburgerCache = new HashMap<>(additionForHamburgerCache);
+		Map<String, Addition> additionForDeluxeHamburgerCache = new HashMap<>();
 		additionForDeluxeHamburgerCache.put(Constants.CHIPS, new ChipsAddition());
 		additionForDeluxeHamburgerCache.put(Constants.DRINKS, new DrinksAddition());
 
